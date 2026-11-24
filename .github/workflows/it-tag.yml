@@ -1,0 +1,10 @@
+name: it-tag
+on:
+  push:
+    tags-ignore: ['no-run-*']
+permissions: {}
+jobs:
+  tag:
+    runs-on: ubuntu-slim
+    steps:
+      - run: 'true'
